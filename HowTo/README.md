@@ -5,13 +5,18 @@
         * you need a [github account](https://github.com/join)
         * [fork](https://help.github.com/articles/fork-a-repo/) the github repository of interest e.g. https://github.com/rohanLuigi/JuliaWorkshopDec2018 
 * a Docker container with git
-## Create a Docker network bridge
+## Create a Docker network bridge (optional)
 In order to connect to network resources from inside the container we will use a [bridge](https://docs.docker.com/network/bridge/#manage-a-user-defined-bridge), which needs to be created once. 
+
 ```bash
+docker network ls
+# check if there is an existing bridge to use
+#if not:
 docker network create mybridge
 ```
 ## Start the Docker container
 ```bash
+#replace mybridge with whatever name <docker network ls> above listed
 docker run -itd -p 8888:8888 --network="mybridge" qtlrocks/jwas-docker
 ```
 
