@@ -9,6 +9,6 @@ The workshop will provide an introduction to the programming language Julia and 
 use in genomic analyses. The course consists of lectures and practical components 
 with hands-on exercises.
 
-## [Notes](Notebooks/index.ipynb)
+## [Notes](Notebooks/0.2.index.ipynb)
 
 
