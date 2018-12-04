@@ -1,6 +1,6 @@
 # HowTo use a git repository to exchange data with a Docker container
 ## Prerequisites
-* a git repository on a web accessible server
+* a [git](https://git-scm.com/book/de/v1) repository on a web accessible server
     * e.g. [github](https://github.com/): 
         * you need a [github account](https://github.com/join)
         * [fork](https://help.github.com/articles/fork-a-repo/) the github repository of interest e.g. https://github.com/rohanLuigi/JuliaWorkshopDec2018 
@@ -31,6 +31,7 @@ docker ps -a
 docker exec -it youthful_lalande bash
 ```
 ## Inside the container (bash)
+Using [git](https://git-scm.com/book/de/v1) we clone the repo:
 ```bash
 git clone https://github.com/<YOUR_GITHUB_USER_NAME>/JuliaWorkshopDec2018.git
 cd JuliaWorkshopDec2018
